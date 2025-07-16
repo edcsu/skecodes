@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { Button } from "../ui/button";
 	import { Separator } from "../ui/separator";
+    import ToggleTheme from "../toggle-theme/+page.svelte";
 </script>
 
 <header
@@ -10,7 +11,8 @@
     <Separator orientation="vertical" class="mx-2 data-[orientation=vertical]:h-4" />
     <h1 class="text-base font-medium">Skecodes</h1>
     <div class="ml-auto flex items-center gap-2">
-      <Button
+        <ToggleTheme />
+      <!-- <Button
         href="https://github.com/shadcn-ui/ui/tree/main/apps/v4/app/(examples)/dashboard"
         variant="ghost"
         size="sm"
@@ -19,7 +21,7 @@
         rel="noopener noreferrer"
       >
         GitHub
-      </Button>
+      </Button> -->
     </div>
   </div>
 </header>
